@@ -1,0 +1,38 @@
+D:\POS sample DB\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.Properties.Resources.resources
+D:\POS sample DB\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.csproj.GenerateResource.Cache
+D:\POS sample DB\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.exe.config
+D:\POS sample DB\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.exe
+D:\POS sample DB\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.pdb
+D:\POS sample DB\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.exe
+D:\POS sample DB\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.pdb
+D:\POS sample DB\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.csprojResolveAssemblyReference.cache
+D:\POS sample DB\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.frmActivate.resources
+D:\POS\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.exe.config
+D:\POS\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.exe
+D:\POS\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.pdb
+D:\POS\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.exe
+D:\POS\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.pdb
+D:\POS\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.frmActivate.resources
+D:\POS\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.Properties.Resources.resources
+D:\POS\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.csproj.GenerateResource.Cache
+D:\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.exe.config
+D:\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.exe
+D:\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.pdb
+D:\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.frmActivate.resources
+D:\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.Properties.Resources.resources
+D:\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.csproj.GenerateResource.Cache
+D:\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.exe
+D:\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.pdb
+D:\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.csprojResolveAssemblyReference.cache
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\True_POS_Activator\bin\Debug\True_POS_Activator.exe.config
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.exe
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\True_POS_Activator\obj\Debug\True_POS_Activator.pdb
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\bin\Debug\True_POS_Activator.exe.config
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\bin\Debug\True_POS_Activator.exe
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\bin\Debug\True_POS_Activator.pdb
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\obj\Debug\True_POS_Activator.frmActivate.resources
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\obj\Debug\True_POS_Activator.Properties.Resources.resources
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\obj\Debug\True_POS_Activator.csproj.GenerateResource.Cache
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\obj\Debug\True_POS_Activator.exe
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\obj\Debug\True_POS_Activator.pdb
+D:\POS sample DB\POS_Management-V3\True_POS_Activator\obj\Debug\True_POS_Activator.csprojResolveAssemblyReference.cache

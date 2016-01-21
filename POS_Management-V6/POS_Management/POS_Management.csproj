@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B0DE2B9D-2DF2-40D4-83CA-4D7AD2E6ACB8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POS_Management</RootNamespace>
+    <AssemblyName>POS_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>C:\Users\DELL\Downloads\06-01-2014 LaboManagementTrialEdition\LaboManagement\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.designer.cs">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServer.designer.cs">
+      <DependentUpon>frmServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_BRAND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_BRAND.Designer.cs">
+      <DependentUpon>FRM_ADD_BRAND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_CATEGORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_CATEGORY.Designer.cs">
+      <DependentUpon>FRM_ADD_CATEGORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_PRODUCT.Designer.cs">
+      <DependentUpon>FRM_ADD_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_PROMOTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_PROMOTION.Designer.cs">
+      <DependentUpon>FRM_ADD_PROMOTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ADD_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ADD_USER.Designer.cs">
+      <DependentUpon>FRM_ADD_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_BRAND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_BRAND.Designer.cs">
+      <DependentUpon>FRM_BRAND.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CATEGORY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CATEGORY.Designer.cs">
+      <DependentUpon>FRM_CATEGORY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_CLOSE_SHIFT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_CLOSE_SHIFT.Designer.cs">
+      <DependentUpon>FRM_CLOSE_SHIFT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_ADD_ORDER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_ADD_ORDER.Designer.cs">
+      <DependentUpon>FRM_INVENTORY_ADD_ORDER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_ADD_PERCHASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_ADD_PERCHASE.Designer.cs">
+      <DependentUpon>FRM_INVENTORY_ADD_PERCHASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_ORDER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_ORDER.Designer.cs">
+      <DependentUpon>FRM_INVENTORY_ORDER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_PERCHASE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_INVENTORY_PERCHASE.Designer.cs">
+      <DependentUpon>FRM_INVENTORY_PERCHASE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PAYMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PAYMENT.Designer.cs">
+      <DependentUpon>FRM_PAYMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PRODUCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PRODUCT.Designer.cs">
+      <DependentUpon>FRM_PRODUCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PROMOTION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PROMOTION.Designer.cs">
+      <DependentUpon>FRM_PROMOTION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_REPORT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_REPORT.Designer.cs">
+      <DependentUpon>FRM_REPORT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SALE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SALE.Designer.cs">
+      <DependentUpon>FRM_SALE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SYSTEM_SETTING.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SYSTEM_SETTING.Designer.cs">
+      <DependentUpon>FRM_SYSTEM_SETTING.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_UNPAID_INVOICE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_UNPAID_INVOICE.Designer.cs">
+      <DependentUpon>FRM_UNPAID_INVOICE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_USER.Designer.cs">
+      <DependentUpon>FRM_USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.Designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServer.resx">
+      <DependentUpon>frmServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_BRAND.resx">
+      <DependentUpon>FRM_ADD_BRAND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_CATEGORY.resx">
+      <DependentUpon>FRM_ADD_CATEGORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_PRODUCT.resx">
+      <DependentUpon>FRM_ADD_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_PROMOTION.resx">
+      <DependentUpon>FRM_ADD_PROMOTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ADD_USER.resx">
+      <DependentUpon>FRM_ADD_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_BRAND.resx">
+      <DependentUpon>FRM_BRAND.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CATEGORY.resx">
+      <DependentUpon>FRM_CATEGORY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_CLOSE_SHIFT.resx">
+      <DependentUpon>FRM_CLOSE_SHIFT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INVENTORY_ADD_ORDER.resx">
+      <DependentUpon>FRM_INVENTORY_ADD_ORDER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INVENTORY_ADD_PERCHASE.resx">
+      <DependentUpon>FRM_INVENTORY_ADD_PERCHASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INVENTORY_ORDER.resx">
+      <DependentUpon>FRM_INVENTORY_ORDER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_INVENTORY_PERCHASE.resx">
+      <DependentUpon>FRM_INVENTORY_PERCHASE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PAYMENT.resx">
+      <DependentUpon>FRM_PAYMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PRODUCT.resx">
+      <DependentUpon>FRM_PRODUCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PROMOTION.resx">
+      <DependentUpon>FRM_PROMOTION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_REPORT.resx">
+      <DependentUpon>FRM_REPORT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SALE.resx">
+      <DependentUpon>FRM_SALE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SYSTEM_SETTING.resx">
+      <DependentUpon>FRM_SYSTEM_SETTING.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_UNPAID_INVOICE.resx">
+      <DependentUpon>FRM_UNPAID_INVOICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_USER.resx">
+      <DependentUpon>FRM_USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultProImg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POS_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POSmenu.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

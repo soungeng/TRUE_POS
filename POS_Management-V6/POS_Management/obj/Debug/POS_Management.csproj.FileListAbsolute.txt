@@ -1,0 +1,112 @@
+D:\POS sample DB\POS_Management\POS_Management\bin\Debug\POS_Management.exe.config
+D:\POS sample DB\POS_Management\POS_Management\bin\Debug\POS_Management.exe
+D:\POS sample DB\POS_Management\POS_Management\bin\Debug\POS_Management.pdb
+D:\POS sample DB\POS_Management\POS_Management\obj\Debug\POS_Management.Properties.Resources.resources
+D:\POS sample DB\POS_Management\POS_Management\obj\Debug\POS_Management.csproj.GenerateResource.Cache
+D:\POS sample DB\POS_Management\POS_Management\obj\Debug\POS_Management.exe
+D:\POS sample DB\POS_Management\POS_Management\obj\Debug\POS_Management.pdb
+D:\POS sample DB\POS_Management\POS_Management\obj\Debug\POS_Management.frmMain.resources
+D:\POS\POS_Management\POS_Management\bin\Debug\POS_Management.exe.config
+D:\POS\POS_Management\POS_Management\obj\Debug\POS_Management.exe
+D:\POS\POS_Management\POS_Management\obj\Debug\POS_Management.pdb
+D:\POS\POS_Management\POS_Management\bin\Debug\POS_Management.exe
+D:\POS\POS_Management\POS_Management\bin\Debug\POS_Management.pdb
+D:\POS\POS_Management\POS_Management\obj\Debug\POS_Management.frmMain.resources
+D:\POS\POS_Management\POS_Management\obj\Debug\POS_Management.Properties.Resources.resources
+D:\POS\POS_Management\POS_Management\obj\Debug\POS_Management.csproj.GenerateResource.Cache
+D:\POS_Management\POS_Management\bin\Debug\POS_Management.exe.config
+D:\POS_Management\POS_Management\bin\Debug\POS_Management.exe
+D:\POS_Management\POS_Management\bin\Debug\POS_Management.pdb
+D:\POS_Management\POS_Management\obj\Debug\POS_Management.frmMain.resources
+D:\POS_Management\POS_Management\obj\Debug\POS_Management.Properties.Resources.resources
+D:\POS_Management\POS_Management\obj\Debug\POS_Management.csproj.GenerateResource.Cache
+D:\POS_Management\POS_Management\obj\Debug\POS_Management.exe
+D:\POS_Management\POS_Management\obj\Debug\POS_Management.pdb
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\bin\Debug\POS_Management.exe.config
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.exe
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.pdb
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\bin\Debug\POS_Management.exe
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\bin\Debug\POS_Management.pdb
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.Properties.Resources.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.csproj.GenerateResource.Cache
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_MAIN.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_SALE.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.csprojResolveAssemblyReference.cache
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_ADD_PRODUCT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_CLOSE_SHIFT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_PRODUCT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_PROMOTION.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_REPORT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_SETTING.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_USER.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_ADD_CATEGORY.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_CATEGORY.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_ADD_BRAND.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_BRAND.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ADD_ORDER.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ADD_PERCHASE.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ORDER.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_PERCHASE.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\bin\Debug\POS_Management.exe.config
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.exe
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.pdb
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_ADD_BRAND.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_ADD_CATEGORY.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_ADD_PRODUCT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_ADD_PROMOTION.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_ADD_USER.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_BRAND.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_CATEGORY.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_CLOSE_SHIFT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ADD_ORDER.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ADD_PERCHASE.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ORDER.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_PERCHASE.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_MAIN.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_PAYMENT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_PRODUCT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_PROMOTION.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_REPORT.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_SALE.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_SETTING.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_UNPAID_INVOICE.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.FRM_USER.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.Properties.Resources.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.csproj.GenerateResource.Cache
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\bin\Debug\POS_Management.exe
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\bin\Debug\POS_Management.pdb
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.frmServer.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.frmLogIn.resources
+D:\SouNgeng\POS-AII\POS_Management\POS_Management-V2\POS_Management\obj\Debug\POS_Management.csprojResolveAssemblyReference.cache
+D:\POS sample DB\POS_Management-V3\POS_Management\bin\Debug\POS_Management.exe.config
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.exe
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.pdb
+D:\POS sample DB\POS_Management-V3\POS_Management\bin\Debug\POS_Management.exe
+D:\POS sample DB\POS_Management-V3\POS_Management\bin\Debug\POS_Management.pdb
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.frmLogIn.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.frmServer.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_ADD_BRAND.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_ADD_CATEGORY.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_ADD_PRODUCT.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_ADD_PROMOTION.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_ADD_USER.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_BRAND.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_CATEGORY.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_CLOSE_SHIFT.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ADD_ORDER.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ADD_PERCHASE.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_ORDER.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_INVENTORY_PERCHASE.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_PAYMENT.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_PRODUCT.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_PROMOTION.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_REPORT.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_SALE.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_UNPAID_INVOICE.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_USER.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.Properties.Resources.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.csproj.GenerateResource.Cache
+D:\POS sample DB\POS_Management-V3\POS_Management\bin\Debug\DevComponents.DotNetBar2.dll
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.MAIN.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.FRM_SYSTEM_SETTING.resources
+D:\POS sample DB\POS_Management-V3\POS_Management\obj\Debug\POS_Management.csprojResolveAssemblyReference.cache
