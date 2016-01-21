@@ -42,39 +42,60 @@ namespace POS_Management
 
         private void AddProductToDGVByProId(int pro_id)
         {
-            try
+            if (TXT_INVOICE_NO.Text != "")
             {
-                DataTable dt_product = new DataTable();
-                dt_product = DBAccess.OperationGet.Get_by_direct("PRODUCT", "Pro_id, Pro_code, Pro_name_en, Pro_name_kh, Pro_price", "Pro_status=1 and Pro_id=" + pro_id);
-
-                if (dt_product.Rows.Count > 0)
+                try
                 {
-                    AddProductToDGV(dt_product);
+                    DataTable dt_product = new DataTable();
+                    dt_product = DBAccess.OperationGet.Get_by_direct("PRODUCT", "Pro_id, Pro_code, Pro_name_en, Pro_name_kh, Pro_price", "Pro_status=1 and Pro_id=" + pro_id);
+
+                    if (dt_product.Rows.Count > 0)
+                    {
+                        AddProductToDGV(dt_product);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
                 }
             }
-            catch (Exception ex)
+            else
             {
-
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Please add new invoice first!");
             }
         }
 
         private void AddProductToDGVByBarcode(string barcode)
         {
-            try
+            if (TXT_INVOICE_NO.Text != "")
             {
-                DataTable dt_product = new DataTable();
-                dt_product = DBAccess.OperationGet.Get_by_direct("PRODUCT", "Pro_id, Pro_code, Pro_name_en, Pro_name_kh, Pro_price", "Pro_status=1 and Pro_code = '" + barcode+"'");
 
-                if (dt_product.Rows.Count > 0)
+
+                try
                 {
-                    AddProductToDGV(dt_product);
+                    DataTable dt_product = new DataTable();
+                    dt_product = DBAccess.OperationGet.Get_by_direct("PRODUCT", "Pro_id, Pro_code, Pro_name_en, Pro_name_kh, Pro_price", "Pro_status=1 and Pro_code = '" + barcode + "'");
+
+                    if (dt_product.Rows.Count > 0)
+                    {
+                        AddProductToDGV(dt_product);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Barcode not exist, please try another code!");
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message);
                 }
             }
-            catch (Exception ex)
+            
+            else
             {
-
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Please add new invoice first!");
             }
         }
 
@@ -84,7 +105,7 @@ namespace POS_Management
             int indexDGV = DGV_ORDERED_PRODUCT.Rows.Count - 1;
             DGV_ORDERED_PRODUCT.Rows[indexDGV].Cells["DGVTXT_PRO_ID"].Value = dt.Rows[0]["Pro_id"].ToString(); ;
             DGV_ORDERED_PRODUCT.Rows[indexDGV].Cells["DGVTXT_PRO_NAME"].Value = dt.Rows[0]["Pro_name_en"].ToString();
-            DGV_ORDERED_PRODUCT.Rows[indexDGV].Cells["DGVTXT_PRO_PRICE"].Value = dt.Rows[0]["Pro_code"].ToString();
+            DGV_ORDERED_PRODUCT.Rows[indexDGV].Cells["DGVTXT_PRO_PRICE"].Value = Convert.ToDouble( dt.Rows[0]["Pro_price"]).ToString("0.000");
             DGV_ORDERED_PRODUCT.Rows[indexDGV].Cells["DGVBTN_MINUS"].Value = "-";
             DGV_ORDERED_PRODUCT.Rows[indexDGV].Cells["DGVTXT_QTY"].Value = 1;
             DGV_ORDERED_PRODUCT.Rows[indexDGV].Cells["DGVBTN_PLUS"].Value = "+";
@@ -143,7 +164,7 @@ namespace POS_Management
             try
             {
                 DataTable dt_product = new DataTable();
-                dt_product = DBAccess.OperationGet.Get_by_direct("PRODUCT PR INNER JOIN PRODUCT_CATEGORY PC ON PR.Pro_id=PC.Pro_id ", "*", "PR.Pro_status=1 and PC.Cat_id=" + cat_id);
+                dt_product = DBAccess.OperationGet.Get_by_direct("PRODUCT PR INNER JOIN PRODUCT_CATEGORY PC ON PR.Pro_id=PC.Pro_id ", "PR.Pro_id,PR.Pro_img,PR.Pro_price,PR.Pro_code,PR.Pro_name_en,PR.Pro_name_kh", "PR.Pro_status=1 and PC.Cat_id=" + cat_id);
                 //MessageBox.Show(dt_product.Rows.Count.ToString());
                 if (dt_product.Rows.Count > 0)
                 {
@@ -167,6 +188,11 @@ namespace POS_Management
                         btn_pro.Name = "BTN_PRO_" + dt_product.Rows[i - 1]["Pro_id"].ToString();
                         btn_pro.Tag = dt_product.Rows[i - 1]["Pro_id"].ToString();
                         btn_pro.Size = BTN_PRO.Size;
+                        btn_pro.BackgroundImageLayout = ImageLayout.Stretch;
+                        if (dt_product.Rows[i - 1]["Pro_img"] != DBNull.Value)
+                            btn_pro.BackgroundImage = Setting.BinarytoImage((Byte[])dt_product.Rows[i - 1]["Pro_img"]);
+                        else
+                            btn_pro.BackgroundImage = Properties.Resources.DefaultProImg;
                         btn_pro.Click += new EventHandler(ProductClick);
 
                         // 
@@ -448,7 +474,47 @@ namespace POS_Management
 
         private void BTN_SAVE_Click(object sender, EventArgs e)
         {
+            if (TXT_INVOICE_NO.Tag.ToString()!="" && DGV_ORDERED_PRODUCT.Rows.Count>0)
+            {
+                for (int i = 0; i < DGV_ORDERED_PRODUCT.Rows.Count; i++)
+                {
+                    /*
+                      0  Inv_id,
+				      1  Pro_id,
+				      2  Pro_code,
+				      3  Pro_name_en,
+				      4  Pro_name_kh,
+				      5  Ind_qty,
+				      6  Ind_price,
+				      7  Prn_id,
+				      8  Ind_sale_price,
+				      9  Usr_id,
+				      10  Ind_status,
+				      11  Ind_modify_by,
+				      12  Ind_modify_date
+                     */
+                    dynamic dynamic_field = new dynamic[13];
+                    dynamic_field[0] = TXT_INVOICE_NO.Tag;
+                    dynamic_field[1] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_ID"];
+                    dynamic_field[2] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_CODE"];
+                    dynamic_field[3] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_EN"];
+                    dynamic_field[4] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
+                    dynamic_field[5] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_QTY"];
+                    dynamic_field[6] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_PRICE"];
+                    dynamic_field[7] = null;
+                    dynamic_field[8] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
+                    dynamic_field[9] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
+                    dynamic_field[10] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
+                    dynamic_field[11] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
+                    dynamic_field[12] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
 
+
+                    dynamic dynamic_value = new dynamic[13];
+                    dynamic_value[0] = "";
+
+                    DBAccess.OperationInsert.Insert_by_Procedure("Ins_InvoiceDetail", dynamic_field, dynamic_value);
+                }
+            }
         }
 
         private void TXT_BARCODE_Enter(object sender, EventArgs e)
@@ -476,8 +542,6 @@ namespace POS_Management
                 {
                     AddProductToDGVByBarcode(txt.Text.Trim());
                 }
-                
-                
             }
         }
 

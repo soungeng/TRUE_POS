@@ -30,10 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LBL_USER_ID = new System.Windows.Forms.Label();
             this.LBL_LOGGED_BY = new System.Windows.Forms.Label();
             this.LBL_DATETIME = new System.Windows.Forms.Label();
@@ -75,28 +76,30 @@
             this.BTN_CLOSE = new System.Windows.Forms.Button();
             this.BTN_PRINT_BILL = new System.Windows.Forms.Button();
             this.pnlhead = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.DGVTXT_PRO_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DGVTXT_PRO_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVTXT_PRO_NAME_EN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGVTXT_PRO_PRICE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGVBTN_MINUS = new System.Windows.Forms.DataGridViewButtonColumn();
             this.DGVTXT_QTY = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DGVBTN_PLUS = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.DGVTXT_PRO_NAME_KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DGVTXT_PRO_CODE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_ORDERED_PRODUCT)).BeginInit();
             this.PNL_CATEGORY.SuspendLayout();
             this.PNL_PRODUCT.SuspendLayout();
             this.GRB_PRODUCT1.SuspendLayout();
             this.pnlhead.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // LBL_USER_ID
@@ -148,7 +151,7 @@
             this.BTN_NEW_INVOICE.Name = "BTN_NEW_INVOICE";
             this.BTN_NEW_INVOICE.Size = new System.Drawing.Size(236, 43);
             this.BTN_NEW_INVOICE.TabIndex = 9;
-            this.BTN_NEW_INVOICE.Text = "New Invoice";
+            this.BTN_NEW_INVOICE.Text = "Add New Invoice";
             this.BTN_NEW_INVOICE.UseVisualStyleBackColor = false;
             this.BTN_NEW_INVOICE.Click += new System.EventHandler(this.BTN_NEW_INVOICE_Click);
             // 
@@ -239,27 +242,29 @@
             this.DGV_ORDERED_PRODUCT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_ORDERED_PRODUCT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DGVTXT_PRO_ID,
-            this.DGVTXT_PRO_NAME,
+            this.DGVTXT_PRO_NAME_EN,
             this.DGVTXT_PRO_PRICE,
             this.DGVBTN_MINUS,
             this.DGVTXT_QTY,
-            this.DGVBTN_PLUS});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_ORDERED_PRODUCT.DefaultCellStyle = dataGridViewCellStyle4;
+            this.DGVBTN_PLUS,
+            this.DGVTXT_PRO_NAME_KH,
+            this.DGVTXT_PRO_CODE});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_ORDERED_PRODUCT.DefaultCellStyle = dataGridViewCellStyle5;
             this.DGV_ORDERED_PRODUCT.Location = new System.Drawing.Point(8, 133);
             this.DGV_ORDERED_PRODUCT.MultiSelect = false;
             this.DGV_ORDERED_PRODUCT.Name = "DGV_ORDERED_PRODUCT";
             this.DGV_ORDERED_PRODUCT.RowHeadersVisible = false;
             this.DGV_ORDERED_PRODUCT.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToFirstHeader;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DGV_ORDERED_PRODUCT.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGV_ORDERED_PRODUCT.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DGV_ORDERED_PRODUCT.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.DGV_ORDERED_PRODUCT.RowTemplate.Height = 40;
             this.DGV_ORDERED_PRODUCT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -573,6 +578,18 @@
             this.pnlhead.Size = new System.Drawing.Size(1024, 56);
             this.pnlhead.TabIndex = 25;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::POS_Management.Properties.Resources.DefaultProImg;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.PNL_CATEGORY);
@@ -599,6 +616,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1024, 146);
             this.panel2.TabIndex = 26;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BTN_CAT_BACK);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(490, 114);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(534, 32);
+            this.panel1.TabIndex = 22;
             // 
             // panel3
             // 
@@ -635,27 +661,6 @@
             this.panel5.Size = new System.Drawing.Size(490, 566);
             this.panel5.TabIndex = 23;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::POS_Management.Properties.Resources.DefaultProImg;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.BTN_CAT_BACK);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(490, 114);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(534, 32);
-            this.panel1.TabIndex = 22;
-            // 
             // DGVTXT_PRO_ID
             // 
             this.DGVTXT_PRO_ID.FillWeight = 76.14214F;
@@ -663,17 +668,20 @@
             this.DGVTXT_PRO_ID.Name = "DGVTXT_PRO_ID";
             this.DGVTXT_PRO_ID.ReadOnly = true;
             // 
-            // DGVTXT_PRO_NAME
+            // DGVTXT_PRO_NAME_EN
             // 
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.DGVTXT_PRO_NAME.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DGVTXT_PRO_NAME.FillWeight = 208.4796F;
-            this.DGVTXT_PRO_NAME.HeaderText = "Name";
-            this.DGVTXT_PRO_NAME.Name = "DGVTXT_PRO_NAME";
-            this.DGVTXT_PRO_NAME.ReadOnly = true;
+            this.DGVTXT_PRO_NAME_EN.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DGVTXT_PRO_NAME_EN.FillWeight = 208.4796F;
+            this.DGVTXT_PRO_NAME_EN.HeaderText = "Name";
+            this.DGVTXT_PRO_NAME_EN.Name = "DGVTXT_PRO_NAME_EN";
+            this.DGVTXT_PRO_NAME_EN.ReadOnly = true;
             // 
             // DGVTXT_PRO_PRICE
             // 
+            dataGridViewCellStyle3.Format = "N3";
+            dataGridViewCellStyle3.NullValue = null;
+            this.DGVTXT_PRO_PRICE.DefaultCellStyle = dataGridViewCellStyle3;
             this.DGVTXT_PRO_PRICE.FillWeight = 106.4544F;
             this.DGVTXT_PRO_PRICE.HeaderText = "Price";
             this.DGVTXT_PRO_PRICE.Name = "DGVTXT_PRO_PRICE";
@@ -688,10 +696,10 @@
             // 
             // DGVTXT_QTY
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "N0";
-            dataGridViewCellStyle3.NullValue = null;
-            this.DGVTXT_QTY.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = null;
+            this.DGVTXT_QTY.DefaultCellStyle = dataGridViewCellStyle4;
             this.DGVTXT_QTY.FillWeight = 81.96055F;
             this.DGVTXT_QTY.HeaderText = "QTY";
             this.DGVTXT_QTY.Name = "DGVTXT_QTY";
@@ -702,6 +710,18 @@
             this.DGVBTN_PLUS.HeaderText = "";
             this.DGVBTN_PLUS.Name = "DGVBTN_PLUS";
             this.DGVBTN_PLUS.ReadOnly = true;
+            // 
+            // DGVTXT_PRO_NAME_KH
+            // 
+            this.DGVTXT_PRO_NAME_KH.HeaderText = "Name kh";
+            this.DGVTXT_PRO_NAME_KH.Name = "DGVTXT_PRO_NAME_KH";
+            this.DGVTXT_PRO_NAME_KH.Visible = false;
+            // 
+            // DGVTXT_PRO_CODE
+            // 
+            this.DGVTXT_PRO_CODE.HeaderText = "CODE";
+            this.DGVTXT_PRO_CODE.Name = "DGVTXT_PRO_CODE";
+            this.DGVTXT_PRO_CODE.Visible = false;
             // 
             // FRM_SALE
             // 
@@ -724,13 +744,13 @@
             this.GRB_PRODUCT1.PerformLayout();
             this.pnlhead.ResumeLayout(false);
             this.pnlhead.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -785,10 +805,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTXT_PRO_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DGVTXT_PRO_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DGVTXT_PRO_NAME_EN;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTXT_PRO_PRICE;
         private System.Windows.Forms.DataGridViewButtonColumn DGVBTN_MINUS;
         private System.Windows.Forms.DataGridViewTextBoxColumn DGVTXT_QTY;
         private System.Windows.Forms.DataGridViewButtonColumn DGVBTN_PLUS;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DGVTXT_PRO_NAME_KH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DGVTXT_PRO_CODE;
     }
 }
