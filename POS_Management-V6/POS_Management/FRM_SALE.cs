@@ -478,39 +478,37 @@ namespace POS_Management
             {
                 for (int i = 0; i < DGV_ORDERED_PRODUCT.Rows.Count; i++)
                 {
-                    /*
-                      0  Inv_id,
-				      1  Pro_id,
-				      2  Pro_code,
-				      3  Pro_name_en,
-				      4  Pro_name_kh,
-				      5  Ind_qty,
-				      6  Ind_price,
-				      7  Prn_id,
-				      8  Ind_sale_price,
-				      9  Usr_id,
-				      10  Ind_status,
-				      11  Ind_modify_by,
-				      12  Ind_modify_date
-                     */
+                    
                     dynamic dynamic_field = new dynamic[13];
-                    dynamic_field[0] = TXT_INVOICE_NO.Tag;
-                    dynamic_field[1] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_ID"];
-                    dynamic_field[2] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_CODE"];
-                    dynamic_field[3] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_EN"];
-                    dynamic_field[4] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
-                    dynamic_field[5] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_QTY"];
-                    dynamic_field[6] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_PRICE"];
-                    dynamic_field[7] = null;
-                    dynamic_field[8] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
-                    dynamic_field[9] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
-                    dynamic_field[10] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
-                    dynamic_field[11] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
-                    dynamic_field[12] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
+                    dynamic_field[0] = "Inv_id";
+                    dynamic_field[1] = "Pro_id";
+                    dynamic_field[2] = "Pro_code";
+                    dynamic_field[3] = "Pro_name_en";
+                    dynamic_field[4] = "Pro_name_kh";
+                    dynamic_field[5] = "Ind_qty";
+                    dynamic_field[6] = "Ind_price";
+                    dynamic_field[7] = "Prn_id";
+                    dynamic_field[8] = "Ind_sale_price";
+                    dynamic_field[9] = "Usr_id";
+                    dynamic_field[10] = "Ind_status";
+                    dynamic_field[11] = "Ind_modify_by";
+                    dynamic_field[12] = "Ind_modify_date";
 
 
                     dynamic dynamic_value = new dynamic[13];
-                    dynamic_value[0] = "";
+                    dynamic_value[0] = TXT_INVOICE_NO.Tag;
+                    dynamic_value[1] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_ID"];
+                    dynamic_value[2] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_CODE"];
+                    dynamic_value[3] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_EN"];
+                    dynamic_value[4] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_NAME_KH"];
+                    dynamic_value[5] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_QTY"];
+                    dynamic_value[6] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_PRICE"];
+                    dynamic_value[7] = null;
+                    dynamic_value[8] = DGV_ORDERED_PRODUCT.Rows[i].Cells["DGVTXT_PRO_PRICE"];
+                    dynamic_value[9] = Properties.Settings.Default.User_id;
+                    dynamic_value[10] = 1;
+                    dynamic_value[11] = Properties.Settings.Default.User_id;
+                    dynamic_value[12] = DateTime.Now;
 
                     DBAccess.OperationInsert.Insert_by_Procedure("Ins_InvoiceDetail", dynamic_field, dynamic_value);
                 }
